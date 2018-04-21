@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.7
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Апр 20 2018 г., 19:51
+- Версия сервера: 5.7.20
+- Версия PHP: 5.6.32
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="testManao" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `login` varchar(255) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'testManao'
+    -->
+    <database name="testManao">
+        <!-- Таблица user -->
+    </database>
+</pma_xml_export>
